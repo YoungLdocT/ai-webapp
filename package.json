@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "next": "16.4.3",
+    "openai": "^6.49.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
