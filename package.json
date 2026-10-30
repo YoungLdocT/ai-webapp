@@ -3,25 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "cross-env DB_HOST=localhost && next dev",
+    "build": "cross-env DB_HOST=8.8.8.8 && next build",
+    "start": "next start -p 9999",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^3.0.132",
+    "@ai-sdk/react": "^3.0.320",
+    "@better-auth/prisma-adapter": "^1.7.14",
+    "@formatjs/intl-localematcher": "^0.9.0",
+    "@nanostores/react": "github:ai/react",
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "ai": "^6.0.316",
+    "negotiator": "^1.1.0",
     "next": "16.4.3",
     "openai": "^6.49.0",
+    "pg": "^8.23.1",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
+    "@types/negotiator": "^0.6.5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
+    "less-loader": "^12.3.3",
+    "prisma": "^7.8.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

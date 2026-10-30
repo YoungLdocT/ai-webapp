@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///src/dictionaries/zh.json"],"sourcesContent":["{\"title\":\"标题\",\"description\":\"描述\",\"keywords\":\"关键词\"}"],"names":[],"mappings":""}}]
+}

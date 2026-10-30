@@ -1,0 +1,32 @@
+### 创建用户
+POST http://localhost:8888/api/db
+Content-Type: application/json
+ 
+{
+    "name": "test",
+    "email": "1test@test.com",
+    "password": "123456"
+}
+ 
+### 查询所有用户
+GET http://localhost:3000/api/db
+ 
+ 
+### 更新用户
+PATCH http://localhost:8888/api/db
+Content-Type: application/json
+ 
+{
+    "id": "cmkyoxflr00004ck82ywc6joi",
+    "name": "xiaoman",
+    "email": "xiaomansdasdas",
+    "password": "dasdasda"
+}
+ 
+### 删除用户
+DELETE http://localhost:8888/api/db
+Content-Type: application/json
+ 
+{
+    "id": "cmkyoxflr00004ck82ywc6joi"
+}
